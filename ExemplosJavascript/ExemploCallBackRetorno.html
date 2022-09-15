@@ -1,0 +1,15 @@
+<html>
+<script>
+    function sum(a, b, pfn) {
+        setTimeout(function () {
+            pfn( a + b);
+        }, 500);
+
+    }
+
+    const a = sum(2, 2, function (result) {console.log("Result: " + result)});
+    console.log(a);
+
+</script>
+
+</html>

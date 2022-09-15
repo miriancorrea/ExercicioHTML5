@@ -1,0 +1,31 @@
+<html>
+    <script>
+        function validar() {
+            var valor = document.getElementById('terceirocampo').value;
+
+            if (valor == '') {
+                alert("Campo terceiro é obrigatório!");
+                document.getElementById('terceirocampo').focus();    
+            }
+
+        }
+    </script>
+    <body >
+        <button onclick="Javascript:alert('Alerta!')">Clicar </button>
+        <button ondblclick="Javascript:alert('Duplo clique!')" >Duplo clique </button >
+        <!--button onmouseover="Javascript:alert('Sai daqui!')">Passar o mouse por cima </button--> 
+        <button onmouseout="Javascript:alert('Get over here!')">retirar o mouse! </button> 
+        <br>
+        <img onclick="Javascript:alert('Não mexa neste escorpiao!')" src="1.jpg" width="20%" height="20%"   />
+        <br>
+        <label for="campo">Campo!</label>
+        <input onchange="Javascript:alert('ao mudar')" type="text" id="campo">
+        <label for="outrocampo">Outro Campo:</label>
+        <input  onkeydown="Javascript:alert('keydown')" onkeypress="Javascript:alert('KeyPress')"  type="text" id="outrocampo">
+        <br>    
+        <label for="terceirocampo">Terceiro Campo:</label>
+        <input onblur="Javascript:validar()" type="text" id="terceirocampo">
+        
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <script>
+
+        var nota1 = parseInt(prompt("Informe a primeira nota"));
+        var nota2 = parseInt(prompt("Informe a segunda nota"));
+        
+        var media = (nota1 + nota2) /2;
+        //document.write(nota1 + '<br>');
+        //document.write(nota2+ '<br>');
+        //document.write((nota1 + nota2)+ '<br>');
+        document.write(media);
+
+        if (media >= 7) {
+            document.write('<p style="color: green">Aprovado</p>');
+        } else if (media < 7 && media >= 3) {
+            document.write('<p style="color: orange">Em Exame</p>');
+        } else if (media < 3) {
+            document.write('<p style="color: red">reprovado!</p>');
+        }
+
+    </script>
+</html>

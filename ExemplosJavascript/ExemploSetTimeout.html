@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h2 id="demo"></h2>
+
+<script>
+function hora() {
+  let hoje = new Date();
+
+  let hora = hoje.getHours();
+  let minutos = hoje.getMinutes();
+  let segundos = hoje.getSeconds();
+
+  return hora + ":" + minutos + ":" + segundos;
+
+}
+
+function funcao() {
+  //document.getElementById("demo").innerHTML = "Oie!"
+
+  document.write('Esse texto foi gerado pela função ' + hora());
+}
+
+setTimeout(funcao, 15000);
+
+document.write("Esse texto foi gerado fora da funcao " + hora());
+
+
+
+</script>
+
+</body>
+</html>

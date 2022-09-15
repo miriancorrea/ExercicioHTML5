@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function funcao(objeto) {
+            console.log(objeto);
+            console.dir(objeto);
+            console.log(objeto.valueAsNumber + ' ' + typeof(objeto.valueAsNumber))
+            document.write(objeto.valueAsNumber + ' ' + typeof(objeto.valueAsNumber));
+        }
+
+        
+
+    </script>
+    <body>
+        <input type="number" id='campo' />
+        <button onclick="funcao(campo)"> função</button>
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+<script>
+    function* infinity() {
+        let i = 0;
+        while (true) {
+            console.log(i++);
+            
+        }
+    }
+
+    function date() {
+        document.write(new Date());
+        document.write('<br>');
+    }
+
+    const infinityGenerator = infinity();
+    infinityGenerator.next();
+    date();
+    infinityGenerator.next();
+
+</script>
+<button onclick="Javascript:infinityGenerator.next()">Executa</button>
+<button onclick="Javascript:infinityGenerator.yield">Pausa</button>
+
+</html>

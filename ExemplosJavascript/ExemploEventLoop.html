@@ -1,0 +1,28 @@
+<html>
+<script>
+let i = 0;
+function imprime() {
+    console.log(i++);
+}
+
+function infinity() {
+    
+    var millisecondsToWait = 5000;
+    setTimeout(function() {
+        imprime()
+    }, millisecondsToWait);
+    
+}
+
+function data() {
+
+	console.log(new Date());
+
+}
+
+infinity();
+data();
+
+
+</script>
+</html>

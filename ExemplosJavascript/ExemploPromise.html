@@ -1,0 +1,22 @@
+<script>
+function somarNumeros(umNumero, outroNumero) {
+    return new Promise((resolve, reject) => {
+        //bloco de comandos que serão executados assincronamente.
+        let soma = umNumero + outroNumero;
+        if (soma > 0) {
+            resolve(soma);
+        } else {
+            reject('Ocorreu erro na operação de soma');
+        }
+    }
+    )
+}
+somarNumeros(10, 5).then(result => {
+    // Bloco de comandos executado no caso de sucesso da execução da promessa
+    console.log('O valor é  ' + result);
+    
+}).catch(erro => {
+    // bloco de comandos em caso de erro na execução da promessa.
+    console.error('Error ' + erro);
+});
+</script>

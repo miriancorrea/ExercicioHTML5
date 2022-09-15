@@ -1,0 +1,42 @@
+<html>
+    <script>
+        function validateForm() {
+            let lista = document.getElementsByTagName("input");
+            let listaLabels = document.getElementsByTagName("label");
+            console.dir(listaLabels);
+            for (let posicaoLabel in listaLabels) {
+                console.dir(posicaoLabel);
+                var objeto = listaLabels.item(posicaoLabel);
+
+
+                objeto.textContent = 'XXXX:';
+
+            }
+            
+            for (let campo in lista) {
+                var objeto = lista.item(campo);
+                if (objeto.value == '' || objeto.value == null) {
+                    objeto.style.borderColor = 'red';
+                    objeto.style.borderStyle = 'dashed';
+                }
+            }
+            
+        }
+    </script>
+    <body>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+        <br><br>
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" size="4" />
+        <br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" size="50" />
+        <br><br>
+
+        <button onclick="Javascript:validateForm()">Confirmar</button>
+
+
+    </body>
+</html>
